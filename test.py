@@ -1,4 +1,6 @@
-NAME = "Roger Ren"
-greeting = f"Hello {NAME}!"
+import requests
 
-print(greeting)
+r = requests.get("https://www.gmail.com")
+
+print(r.status_code)
+print(r.ok)
